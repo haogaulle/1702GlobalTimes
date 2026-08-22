@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="时政锐评：又一场慕尼黑？——评发生在西欧法兰西地方的政变">
+  <title>又一场慕尼黑？｜时政锐评</title>
+  <style>
+    :root {
+      --red: #a6191e;
+      --deep-red: #741015;
+      --pale-red: #fbf4f4;
+      --ink: #202020;
+      --muted: #777;
+      --line: #e5e5e5;
+      --paper: #fff;
+      --page: #f4f4f4;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--page);
+      font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .top-line { height: 4px; background: var(--red); }
+
+    .masthead {
+      background: var(--paper);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .masthead-inner {
+      width: min(1120px, calc(100% - 40px));
+      height: 94px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: baseline;
+      gap: 14px;
+      color: var(--red);
+      white-space: nowrap;
+    }
+
+    .brand strong {
+      font-family: STKaiti, KaiTi, serif;
+      font-size: 42px;
+      letter-spacing: -2px;
+      line-height: 1;
+    }
+
+    .brand span {
+      padding-left: 14px;
+      border-left: 1px solid #d9d9d9;
+      color: #555;
+      font-size: 18px;
+      letter-spacing: 4px;
+    }
+
+    .slogan { color: #999; font: 14px/1.6 SimSun, serif; }
+
+    main {
+      width: min(1120px, calc(100% - 40px));
+      margin: 26px auto 56px;
+      background: var(--paper);
+      box-shadow: 0 1px 5px rgba(0, 0, 0, .06);
+    }
+
+    article { max-width: 830px; margin: 0 auto; padding: 42px 40px 68px; }
+
+    .section-label {
+      display: inline-block;
+      margin-bottom: 17px;
+      padding: 5px 11px;
+      color: white;
+      background: var(--red);
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      margin: 0;
+      color: #181818;
+      font-family: "Noto Serif SC", STSong, SimSun, serif;
+      font-size: clamp(34px, 4.5vw, 48px);
+      font-weight: 700;
+      line-height: 1.25;
+      letter-spacing: -1px;
+    }
+
+    .subtitle {
+      margin: 13px 0 0;
+      color: #555;
+      font-family: "Noto Serif SC", STSong, SimSun, serif;
+      font-size: 20px;
+      line-height: 1.7;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      margin: 22px 0 28px;
+      padding-bottom: 23px;
+      border-bottom: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .lead {
+      margin: 0 0 30px;
+      padding: 20px 24px;
+      border-left: 4px solid var(--red);
+      color: #444;
+      background: var(--pale-red);
+      font-family: "Noto Serif SC", STSong, SimSun, serif;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.85;
+    }
+
+    .body p {
+      margin: 0 0 22px;
+      font-family: "Noto Serif SC", STSong, SimSun, serif;
+      font-size: 19px;
+      line-height: 2;
+      text-align: justify;
+      text-indent: 2em;
+    }
+
+    .byline {
+      margin-top: 34px;
+      padding-top: 18px;
+      border-top: 1px dashed #ccc;
+      color: #666;
+      font-size: 14px;
+      text-align: right;
+    }
+
+    .comments {
+      margin-top: 54px;
+      padding-top: 30px;
+      border-top: 3px solid var(--red);
+    }
+
+    .comments-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0 0 8px;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .comments-title span {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    .comment { padding: 25px 4px; border-bottom: 1px solid var(--line); }
+
+    .comment p {
+      margin: 0;
+      font-family: "Noto Serif SC", STSong, SimSun, serif;
+      font-size: 17px;
+      line-height: 1.9;
+      text-align: justify;
+      white-space: pre-line;
+    }
+
+    .comment-author {
+      margin-top: 12px;
+      color: #666;
+      font-size: 14px;
+      text-align: right;
+    }
+
+    footer {
+      padding: 28px 20px 36px;
+      border-top: 3px solid var(--deep-red);
+      color: #aaa;
+      background: #292929;
+      text-align: center;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 680px) {
+      .masthead-inner { width: calc(100% - 28px); height: 74px; }
+      .brand strong { font-size: 32px; }
+      .brand span { font-size: 15px; letter-spacing: 2px; }
+      .slogan { display: none; }
+      main { width: 100%; margin: 12px 0 0; box-shadow: none; }
+      article { padding: 30px 20px 46px; }
+      .subtitle { font-size: 17px; }
+      .lead { padding: 16px 18px; font-size: 16px; }
+      .body p { font-size: 17px; line-height: 1.9; }
+      .comments { margin-top: 42px; }
+      .comment p { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-line"></div>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <div class="brand"><strong>环球时评</strong><span>锐评</span></div>
+      <div class="slogan">观察世界　传递法国声音</div>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <span class="section-label">时政锐评</span>
+      <h1>又一场慕尼黑？</h1>
+      <p class="subtitle">——评发生在西欧法兰西地方的政变</p>
+      <div class="meta">
+        <span>来源：环球时报</span>
+        <span>记者：Van Tigon</span>
+      </div>
+
+      <p class="lead">这不能不让人联想到——这会是下一次世界大战的导火索吗？</p>
+
+      <div class="body">
+        <p>五百年前，当一战结束二十年后的时候，在慕尼黑，时任德国元首阿道夫·希特勒与当时的英国、法国领导人会晤并签订了《慕尼黑协定》。英法两国将苏台德地区拱让于纳粹德国。</p>
+
+        <p>五百年后，原本如日中天的（前）法兰西帝国忽然一蹶不振，在美利偷合众国尤其是其总统花兴夏的指使下，竟甘沦为罗马尼亚国的一块行省——堂堂皇帝沦为省长。</p>
+
+        <p>这不能不让人联想到——这会是下一次世界大战的导火索吗？</p>
+
+        <p>当前国际形势错综复杂，德、英、印、梵比邻而居，意、比（利时）亦相隔不远，许多爱好和平的国家纷纷关闭国门，如今罗马尼亚吞并法兰西，实在无法不令人堪忧</p>
+
+        <p>根据前方报导，法兰西地区领导人昊高乐目前还致力于其旗下商贸与文化产业的发展。他是在默默准备反戈一击还是甘为人臣？我们不得而知。</p>
+
+        <p>国际形势、地区冲突态势令人忧忧忡忡中。我们呼吁相关方各有责任心的大国强国行动起来，维护世界的和平与稳定。</p>
+      </div>
+
+      <div class="byline">（记者 Van Tigon 撰稿）</div>
+
+      <section class="comments" aria-labelledby="comments-heading">
+        <h2 class="comments-title" id="comments-heading">评论区 <span>5 条评论</span></h2>
+
+        <div class="comment">
+          <p>首先，瑞方将继续坚持不干涉外国内政的基础政策，希望罗方法方能处理双方有关问题。其次，希望罗方能恪守和平条约，积极参与到维护国际关系之中。</p>
+          <div class="comment-author">— James·H</div>
+        </div>
+
+        <div class="comment">
+          <p>比方一向坚持不干涉他国内政原则，自然也不会干涉罗马尼亚对其国行省的治理。比方诚心祝愿罗马尼亚在斯拉·郭总统的治理下越来越好，也希望罗马尼亚法国省省长昊高乐不要做出仍何企图分裂罗马尼亚的举动。不要有任何不利于世界和平的行为</p>
+          <div class="comment-author">— Selena XY-O</div>
+        </div>
+
+        <div class="comment">
+          <p>世界永远和平！
+罗马尼亚牛B！〈被逼〉</p>
+          <div class="comment-author">— Ireland FSD</div>
+        </div>
+
+        <div class="comment">
+          <p>无论法兰西是否被吞并都不要忘记和我国二十五亿欧元的贸易订单</p>
+          <div class="comment-author">— Russia Gay·Liking</div>
+        </div>
+
+        <div class="comment">
+          <p>PS：希望昊高乐阁下也不要遗忘之前承诺我国的一千亿法郎的投资以及物资补助</p>
+          <div class="comment-author">— Selena XY-O</div>
+        </div>
+      </section>
+    </article>
+  </main>
+</body>
+</html>

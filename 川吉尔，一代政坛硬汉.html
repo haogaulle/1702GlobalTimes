@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="环球时报人物专访：川吉尔，一代政坛硬汉">
+  <title>川吉尔，一代政坛硬汉｜人物专访</title>
+  <style>
+    :root {
+      --blue: #07589b;
+      --deep-blue: #003f73;
+      --pale-blue: #f2f7fb;
+      --ink: #202020;
+      --muted: #777;
+      --line: #e5e5e5;
+      --paper: #fff;
+      --page: #f4f4f4;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--page);
+      font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .top-line { height: 4px; background: var(--blue); }
+
+    .masthead {
+      background: var(--paper);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .masthead-inner {
+      width: min(1120px, calc(100% - 40px));
+      height: 94px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: baseline;
+      gap: 14px;
+      color: var(--blue);
+      white-space: nowrap;
+    }
+
+    .brand strong {
+      font-family: STKaiti, KaiTi, serif;
+      font-size: 42px;
+      letter-spacing: -2px;
+      line-height: 1;
+    }
+
+    .brand span {
+      padding-left: 14px;
+      border-left: 1px solid #d9d9d9;
+      color: #555;
+      font-size: 18px;
+      letter-spacing: 4px;
+    }
+
+    .slogan { color: #999; font: 14px/1.6 SimSun, serif; }
+
+    main {
+      width: min(1120px, calc(100% - 40px));
+      margin: 26px auto 56px;
+      background: var(--paper);
+      box-shadow: 0 1px 5px rgba(0, 0, 0, .06);
+    }
+
+    article { max-width: 830px; margin: 0 auto; padding: 42px 40px 68px; }
+
+    .section-label {
+      display: inline-block;
+      margin-bottom: 17px;
+      padding: 5px 11px;
+      color: white;
+      background: var(--blue);
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      margin: 0;
+      color: #181818;
+      font-family: "Noto Serif SC", STSong, SimSun, serif;
+      font-size: clamp(32px, 4vw, 46px);
+      font-weight: 700;
+      line-height: 1.3;
+      letter-spacing: -1px;
+    }
+
+    .subtitle {
+      margin: 12px 0 0;
+      color: #666;
+      font-family: "Noto Serif SC", STSong, SimSun, serif;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      margin: 22px 0 28px;
+      padding-bottom: 23px;
+      border-bottom: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .pullquote {
+      position: relative;
+      margin: 4px 0 34px;
+      padding: 24px 28px 24px 54px;
+      color: var(--deep-blue);
+      background: var(--pale-blue);
+      font-family: "Noto Serif SC", STSong, SimSun, serif;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.75;
+    }
+
+    .pullquote::before {
+      content: "“";
+      position: absolute;
+      top: 7px;
+      left: 18px;
+      color: #8db5d5;
+      font: 52px/1 Georgia, serif;
+    }
+
+    .interview { counter-reset: question; }
+
+    .exchange {
+      margin: 0 0 32px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .exchange:last-child { border-bottom: 0; }
+
+    .question,
+    .answer {
+      position: relative;
+      margin: 0;
+      padding-left: 48px;
+      font-size: 18px;
+      line-height: 1.95;
+      text-align: justify;
+    }
+
+    .question {
+      margin-bottom: 14px;
+      color: #222;
+      font-weight: 700;
+    }
+
+    .answer {
+      color: #3c3c3c;
+      font-family: "Noto Serif SC", STSong, SimSun, serif;
+    }
+
+    .speaker {
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      color: white;
+      background: #888;
+      font: 700 15px/34px "Microsoft YaHei", sans-serif;
+      text-align: center;
+    }
+
+    .answer .speaker { background: var(--blue); }
+
+    .dateline {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px dashed #ccc;
+      color: #666;
+      font-size: 14px;
+      line-height: 1.8;
+      text-align: right;
+    }
+
+    .comments {
+      margin-top: 54px;
+      padding-top: 30px;
+      border-top: 3px solid var(--blue);
+    }
+
+    .comments-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0 0 8px;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .comments-title span {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    .comment { padding: 25px 4px; border-bottom: 1px solid var(--line); }
+
+    .comment p {
+      margin: 0;
+      font-family: "Noto Serif SC", STSong, SimSun, serif;
+      font-size: 17px;
+      line-height: 1.9;
+      text-align: justify;
+    }
+
+    .comment-author {
+      margin-top: 12px;
+      color: #666;
+      font-size: 14px;
+      text-align: right;
+    }
+
+    footer {
+      padding: 28px 20px 36px;
+      border-top: 3px solid var(--deep-blue);
+      color: #999;
+      background: #292929;
+      text-align: center;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 680px) {
+      .masthead-inner { width: calc(100% - 28px); height: 74px; }
+      .brand strong { font-size: 32px; }
+      .brand span { font-size: 15px; letter-spacing: 2px; }
+      .slogan { display: none; }
+      main { width: 100%; margin: 12px 0 0; box-shadow: none; }
+      article { padding: 30px 20px 46px; }
+      .subtitle { font-size: 16px; }
+      .pullquote { padding: 20px 20px 20px 46px; font-size: 17px; }
+      .question, .answer { padding-left: 42px; font-size: 16px; line-height: 1.9; }
+      .speaker { width: 30px; height: 30px; font-size: 14px; line-height: 30px; }
+      .comments { margin-top: 42px; }
+      .comment p { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-line"></div>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <div class="brand"><strong>环球时报</strong><span>人物</span></div>
+      <div class="slogan">观察世界　记录时代人物</div>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <span class="section-label">人物专访</span>
+      <h1>川吉尔，一代政坛硬汉</h1>
+      <p class="subtitle">印度事件之后，他如何判断局势，又将怎样调整英国的对印方针？</p>
+
+      <div class="meta">
+        <span>来源：环球时报</span>
+        <span>记者：哈士奇</span>
+        <span>发自：英国伦敦</span>
+      </div>
+
+      <aside class="pullquote">在涉及英国政治、经济等重大因素时，我想我必须足够强硬，决不妥协。</aside>
+
+      <div class="interview">
+        <section class="exchange">
+          <p class="question"><span class="speaker">问</span>川吉尔先生您好！您在知道印度事发后，第一时间是怎么想的呢？</p>
+          <p class="answer"><span class="speaker">答</span>非常愤怒，以致于刚开始想要处死 Chen。但这样做的话，印度殖民地又只能划给 FSD 侯爵，难免会出现权力过大的情况，会威胁到伦敦。故我最终决定对 Chen 进行威慑与处罚，巩固伦敦影响力。</p>
+        </section>
+
+        <section class="exchange">
+          <p class="question"><span class="speaker">问</span>您用如此强硬的手段对抗印度，信心来自何处呢？不怕印度政府被逼急了吗？</p>
+          <p class="answer"><span class="speaker">答</span>印殖民政府并不具备反英能力，英国的军事力量可以瞬间毁灭印度，并且在内政处理上，英国有权力使用核武器。正是因为怕 Chen 狗急跳墙，将印度分割给其他国家换取庇护，故我决定立即与各国进行交会，表明此事件属于英国内政。</p>
+        </section>
+
+        <section class="exchange">
+          <p class="question"><span class="speaker">问</span>您觉得本次事件的导火索是英国国力下降吗？</p>
+          <p class="answer"><span class="speaker">答</span>国力下降的说法有欠妥当。英国目前的确以英格兰、苏格兰、大不列颠本土发展为生，对殖民地疏于管辖，但这与英国国力下降无关。正如中国歌手张信哲所唱：“是我给你自由过了火。”顺带说一句，我很喜欢中国音乐及文化。</p>
+        </section>
+
+        <section class="exchange">
+          <p class="question"><span class="speaker">问</span>您今后对印度的方针是怎样呢？能透露一下吗？</p>
+          <p class="answer"><span class="speaker">答</span>英国政府调整了对印政策，决定收回印度自治权，并且上调印殖政府向伦敦的纳贡金额，希望印殖政府不再作出妄图独立成国的愚蠢决定。</p>
+        </section>
+
+        <section class="exchange">
+          <p class="question"><span class="speaker">问</span>这一事件会不会对英联邦稳定造成影响？会影响您对其他成员（如爱尔兰）的信任吗？</p>
+          <p class="answer"><span class="speaker">答</span>我认为此事恰恰使英联邦更加紧密地联系在了一起。我们都对国家统一的重要性有了更深层的认识。爱尔兰自治郡总督 FSD 先生与我私交甚密，我对爱尔兰十分信任，并将在不久的将来对其委以重任，适当取代印殖政府的部分作用。</p>
+        </section>
+
+        <section class="exchange">
+          <p class="question"><span class="speaker">问</span>如何评价其他各国的回应？</p>
+          <p class="answer"><span class="speaker">答</span>大部分明智的国家均对英国决定表示肯定与支持，他们都是英国的朋友；但也有少部分国家打着“热爱和平”“人道主义”的幌子，妄图使英国局势变得更加混乱。这样的行为是极可耻的，是极不明智的，应当受到世界各国的谴责。</p>
+        </section>
+
+        <section class="exchange">
+          <p class="question"><span class="speaker">问</span>您被政界评为“一代政坛硬汉”，对此怎么看呢？</p>
+          <p class="answer"><span class="speaker">答</span>我更希望大家能够认为我是和蔼可亲、极好相处的。但在涉及英国政治、经济等重大因素时，我想我必须足够强硬，决不妥协。我相信大英帝国能在我的带领下走向辉煌。</p>
+        </section>
+      </div>
+
+      <div class="dateline">环球时报记者 哈士奇<br>从英国伦敦报道</div>
+
+      <section class="comments" aria-labelledby="comments-heading">
+        <h2 class="comments-title" id="comments-heading">评论区 <span>3 条评论</span></h2>
+
+        <div class="comment">
+          <p>抢沙发、<br>@大公-Chen，川吉尔先生在我处订制的十字架已经全部制成了。川吉尔先生说货到付款，请您签收一下。哦对了，附赠一整套忏悔＋超度仪式的。<br>@大英-川吉尔，合作愉快哟柔！</p>
+          <div class="comment-author">——圣·玛拉顶达</div>
+        </div>
+
+        <div class="comment">
+          <p>@大英-川吉尔，今日印度的 Chen 先生帮意大利拾回一颗“晨光一676Ta5卫星”，印度有恩于意大利。虽然意大利不应干涉英国内政，但意方恳请英方在合适范围宽大处理。</p>
+          <div class="comment-author">——墨索集尼</div>
+        </div>
+
+        <div class="comment">
+          <p>@大英-川吉尔：西班牙本不应干涉英国内政，但出于维护西欧—亚洲各国及殖民地的稳定局面，相信川吉尔先生过人的行政能力能够妥善处理好印度问题，并希望西英两国能继续长期以来的友好合作与贸易往来。</p>
+          <div class="comment-author">——Spanishking-Ren</div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+</body>
+</html>
