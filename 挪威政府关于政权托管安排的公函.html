@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="高峰论坛政府博客：挪威政府关于政权托管安排的公函">
+  <title>挪威政府关于政权托管安排的公函｜高峰论坛</title>
+  <style>
+    :root {
+      --navy: #17365d;
+      --deep-navy: #0b2442;
+      --ice: #eef4f8;
+      --red: #ba0c2f;
+      --ink: #20242a;
+      --muted: #6f7782;
+      --line: #dfe4e8;
+      --paper: #fff;
+      --page: #f3f5f6;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--page);
+      font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .top-line {
+      height: 5px;
+      background: linear-gradient(90deg, var(--red) 0 34%, #fff 34% 66%, var(--navy) 66%);
+    }
+
+    .masthead { background: var(--paper); border-bottom: 1px solid var(--line); }
+    .masthead-inner {
+      width: min(1120px, calc(100% - 40px));
+      height: 94px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand { display: flex; align-items: baseline; gap: 14px; color: var(--navy); white-space: nowrap; }
+    .brand strong { font-family: STKaiti, KaiTi, serif; font-size: 42px; letter-spacing: -2px; line-height: 1; }
+    .brand span { padding-left: 14px; border-left: 1px solid #d9d9d9; color: #555; font-size: 18px; letter-spacing: 4px; }
+    .slogan { color: #999; font: 14px/1.6 SimSun, serif; }
+
+    main {
+      width: min(830px, calc(100% - 40px));
+      margin: 26px auto 56px;
+      background: var(--paper);
+      box-shadow: 0 1px 5px rgba(0, 0, 0, .06);
+    }
+
+    article { width: 100%; margin: 0; padding: 0; }
+
+    .post { overflow: hidden; background: transparent; }
+    .post-head { display: flex; align-items: center; gap: 13px; padding: 34px 40px 16px; }
+    .avatar { display: grid; flex: 0 0 52px; width: 52px; height: 52px; place-items: center; overflow: hidden; border: 1px solid #d9dee3; border-radius: 50%; background: #fff; }
+    .flag { width: 42px; height: 30px; border: 1px solid rgba(0,0,0,.08); background: linear-gradient(90deg, transparent 0 27%, #fff 27% 43%, var(--navy) 43% 50%, #fff 50% 66%, transparent 66%), linear-gradient(transparent 0 38%, #fff 38% 48%, var(--navy) 48% 57%, #fff 57% 67%, transparent 67%), var(--red); }
+    .account { min-width: 0; }
+    .account-name { color: #17202a; font-size: 17px; font-weight: 700; }
+    .verified { display: inline-grid; width: 19px; height: 19px; margin-left: 5px; place-items: center; border-radius: 50%; color: #fff; background: var(--navy); font: 700 12px/1 Arial, sans-serif; vertical-align: 2px; }
+    .account-meta { margin-top: 4px; color: var(--muted); font-size: 13px; }
+    .post-body { padding: 4px 40px 26px; }
+    .post-title { margin: 4px 0 14px; color: var(--red); font-family: "Noto Serif SC", STSong, SimSun, serif; font-size: 23px; font-weight: 700; }
+    .post-text { margin: 0; font-family: "Noto Serif SC", STSong, SimSun, serif; font-size: 19px; line-height: 2; text-align: justify; }
+    .post-time { margin-top: 22px; color: var(--muted); font-size: 13px; }
+    .post-stats { display: flex; gap: 26px; margin: 0 40px; padding: 13px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+
+    .comments { margin-top: 0; padding: 30px 40px 60px; border-top: 8px solid var(--page); }
+    .comments-title { display: flex; align-items: center; gap: 12px; margin: 0 0 8px; font-size: 24px; }
+    .comments-title span { color: var(--muted); font-size: 14px; font-weight: 400; }
+    .comment { padding: 25px 4px; border-bottom: 1px solid var(--line); }
+    .comment p { margin: 10px 0 0; font-family: "Noto Serif SC", STSong, SimSun, serif; font-size: 17px; line-height: 1.9; text-align: justify; }
+    .comment-author { color: var(--navy); font-size: 15px; font-weight: 700; }
+    .comment-author span { margin-left: 8px; color: var(--muted); font-size: 13px; font-weight: 400; }
+    .reply { margin: 18px 0 0 28px; padding: 15px 18px; border-left: 3px solid #9aabbc; background: var(--ice); }
+    .reply strong { display: block; margin-bottom: 6px; color: var(--deep-navy); font-size: 14px; }
+    .reply p { margin: 0; font-size: 15px; }
+    .editorial-mark { text-decoration-line: underline; text-decoration-style: wavy; text-decoration-color: #d31818; text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
+    .note { color: #a21224; font-size: 13px; font-family: "Noto Sans SC", sans-serif; white-space: nowrap; }
+
+    footer { padding: 28px 20px 36px; border-top: 3px solid var(--deep-navy); color: #b8c0c9; background: #202b37; text-align: center; font-size: 13px; line-height: 1.8; }
+
+    @media (max-width: 680px) {
+      .masthead-inner { width: calc(100% - 28px); height: 74px; }
+      .brand strong { font-size: 32px; }
+      .brand span { font-size: 15px; letter-spacing: 2px; }
+      .slogan { display: none; }
+      main { width: 100%; margin: 12px 0 0; box-shadow: none; }
+      .post-head { padding: 24px 20px 13px; }
+      .post-body { padding: 3px 18px 20px; }
+      .post-text { font-size: 17px; line-height: 1.9; }
+      .post-stats { margin: 0 20px; }
+      .comments { padding: 26px 20px 46px; }
+      .comment p { font-size: 16px; }
+      .reply { margin-left: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-line"></div>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <div class="brand"><strong>环球时报</strong><span>高峰论坛</span></div>
+      <div class="slogan">汇集各国政府声音　直面全球议题</div>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <section class="post" aria-label="挪威政府发布的博客帖子">
+        <header class="post-head">
+          <div class="avatar"><div class="flag" role="img" aria-label="挪威国旗图案"></div></div>
+          <div class="account">
+            <div class="account-name">挪威政府 <span class="verified" title="认证政府账号" aria-label="认证政府账号">V</span></div>
+            <div class="account-meta">政府官方账号</div>
+          </div>
+        </header>
+        <div class="post-body">
+          <h1 class="post-title">公函</h1>
+          <p class="post-text">于9月12日，挪威元首 Jack·Z 因其国土内部因素，将于9月12日中午退出政坛，具体复出时间待定。其领土暂由 gay立钦接管，相信这是给 gay利钦的机遇，也是一种挑战。</p>
+          <div class="post-time">9月12日 · 发布于高峰论坛</div>
+        </div>
+        <div class="post-stats"><span>评论 5</span><span>政府博客</span></div>
+      </section>
+
+      <section class="comments" aria-labelledby="comments-heading">
+        <h2 class="comments-title" id="comments-heading">评论区 <span>5 条评论</span></h2>
+
+        <div class="comment">
+          <div class="comment-author">gay立钦</div>
+          <p>@Jack-Zhuo 将与我国如此遥远的土地交付给我托管，确实是个棘手的问题，我已通知外交部与人事部在挪威设立了临时政府分部，国防部也派遣了一定量的兵力前往挪威边境驻守，我相信我手下的能力，我也愿意接过 Jack·Zhuo 的大旗，将挪威建设成一支欧洲劲旅。</p>
+          <div class="reply">
+            <strong>Jack·Zhuo 回复</strong>
+            <p>原挪威兵力，亦可由 gay·liking 调动，相信 gay·liking，同时 Jack·Z 亦会关注世界动态。</p>
+          </div>
+        </div>
+
+        <div class="comment">
+          <div class="comment-author">圣·玛拉顶达 <span>梵蒂冈圣国教皇</span></div>
+          <p>哎哟，不错哦。</p>
+        </div>
+
+        <div class="comment">
+          <div class="comment-author">川吉尔 <span>英政府秘书长</span></div>
+          <p>挪威的行为是令人震惊的，是极不负责任的，同时，对于俄罗斯妄图战有本土外的其他国家的行径，大英帝国表示强烈反对，西欧、东亚、非洲各国政府绝不会眼睁睁地看着世界出现另一个如美利偷的霸权主义国家，并且挪威深处西欧极西之地，与大英帝国毗邻，并对西欧大陆呈包夹之势。因此，挪威理应由《北大西洋公约》成员国接管，而不是由远在东方并与挪威曾爆发过战争的俄罗斯侵占，更不可能允许俄罗斯驻军挪威，Jack·Zhuo 的行为无异于与虎谋皮，为虎作伥！我们无法得知挪威受到了怎样的诱♂惑，但仍希望挪威政府能够三思。否则、西欧势必将再次联合，阻挡俄罗斯对西欧的干涉，同时，<span class="editorial-mark">也希望俄罗斯反思历史之痛，不要再蹈前苏联的覆辙</span>。<span class="note">（此话为病句 gayliking 注）</span></p>
+        </div>
+
+        <div class="comment">
+          <div class="comment-author">恒特勒 <span>德国元首</span></div>
+          <p>挪威总统辞职显然是他被严峻形势所压倒。多年来，挪威态度摇摆不定，虽加入北约却恪守中立，德意志对此一直保持克制。现 Jack 突然倒戈俄罗斯，东方领导人随后宣布出兵挪威，这显然是预谋已久的，德国绝不会让这场政治阴谋得逞。挪威决策层现已解散，挪威地区主权由北大西洋公约组织接管。德国宣布出兵挪威，德国海军封锁波罗的海通往北冰洋的航线，空军对东部、北部实行航空管制。任何俄罗斯军队的越境行为都将视作对北约宣战。</p>
+        </div>
+
+        <div class="comment">
+          <div class="comment-author">基里科gay <span>俄罗斯外交部发言人</span></div>
+          <p>对于英、德两国的言论，我方是极不认同的。作为联合国常任理事国，俄罗斯是一个爱好和平且负责任的大国，挪威总统交付与我的任务，我也只是在确保国际秩序稳定后再去完成。根本不会存在任何侵占想法与霸权主义行为。从上个世纪中期俄挪建交之后，两国一直都是以友好互助的面貌共同发展，俄方不仅在挪威设立了世界健美组织分部，更是联系各方体育总局组建了跨国篮球队和足球队。另外，关于德方的警告，我估计无法兑现，军事长官诺万夫斯基上校早已派遣了大批军队驻守挪威边界，便衣士兵也已遍布奥斯陆城，若是恒特勒现在让我撤军，是否会引起一定的群众恐慌呢？不如德方趁着暂未出兵，早点撤销命令。还有关于北约对俄态度，我个人观点是，若是你认为我有侵占挪威的野心，何不如先静观其变，再采取一定措施呢？英方强调我国干涉挪威内政，可这完全是出于挪威自愿前提之上，英方一昧干涉我方，何不也是有干涉我国内政嫌疑呢？</p>
+        </div>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
