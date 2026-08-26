@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="环球时报·环球调研：关于法兰西地区独立的支持率——全球元首意见调查">
+  <title>关于法兰西地区独立的支持率｜环球调研</title>
+  <style>
+    :root { --blue:#17365d; --red:#ba0c2f; --ink:#20242a; --muted:#707780; --line:#e1e5e9; --paper:#fff; --page:#f3f5f6; --ice:#f1f6fa; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:var(--page); font-family:"Noto Sans SC","Microsoft YaHei","PingFang SC",sans-serif; -webkit-font-smoothing:antialiased; }
+    .top-line { height:5px; background:linear-gradient(90deg,var(--blue) 0 33%,#fff 33% 66%,var(--red) 66%); }
+    .masthead { background:var(--paper); border-bottom:1px solid var(--line); }
+    .masthead-inner { width:min(1120px,calc(100% - 40px)); height:94px; margin:auto; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+    .brand { display:flex; align-items:baseline; gap:14px; color:var(--blue); white-space:nowrap; }
+    .brand strong { font:42px/1 STKaiti,KaiTi,serif; letter-spacing:-2px; }
+    .brand span { padding-left:14px; border-left:1px solid #d9d9d9; color:#555; font-size:18px; letter-spacing:4px; }
+    .slogan { color:#999; font:14px/1.6 SimSun,serif; }
+    main { width:min(880px,calc(100% - 40px)); margin:26px auto 56px; background:var(--paper); box-shadow:0 1px 5px rgba(0,0,0,.06); }
+    article { padding:42px 44px 68px; }
+    .section-label { display:inline-block; margin-bottom:17px; padding:5px 11px; color:#fff; background:var(--red); font-size:14px; letter-spacing:1px; }
+    h1 { margin:0; color:#181818; font:700 clamp(31px,4vw,44px)/1.35 "Noto Serif SC",STSong,SimSun,serif; letter-spacing:-1px; }
+    .subtitle { margin:12px 0 0; color:#555; font:18px/1.7 "Noto Serif SC",STSong,SimSun,serif; }
+    .meta { display:flex; flex-wrap:wrap; gap:8px 18px; margin:22px 0 28px; padding-bottom:23px; border-bottom:1px solid var(--line); color:var(--muted); font-size:14px; }
+    .lead { margin:0 0 36px; padding:22px 25px; border-left:4px solid var(--blue); background:var(--ice); font:17px/1.95 "Noto Serif SC",STSong,SimSun,serif; text-align:justify; }
+    .poll-summary { margin:0 0 42px; padding:24px 26px; border:1px solid var(--line); background:#fafbfc; }
+    .poll-summary h2 { margin:0 0 6px; padding:0; border:0; font-size:23px; }
+    .poll-summary-note { margin:0 0 22px; color:var(--muted); font-size:13px; }
+    .poll-row { display:grid; grid-template-columns:52px 1fr 48px; align-items:center; gap:12px; margin:13px 0; }
+    .poll-label { font-size:14px; font-weight:700; }
+    .poll-track { height:16px; overflow:hidden; background:#e7eaee; border-radius:2px; }
+    .poll-bar { height:100%; }
+    .poll-bar[data-choice="support"] { background:#1f6f50; }
+    .poll-bar[data-choice="neutral"] { background:#c18a27; }
+    .poll-bar[data-choice="oppose"] { background:var(--red); }
+    .poll-value { color:var(--muted); font-size:13px; text-align:right; font-variant-numeric:tabular-nums; }
+    .poll-total { margin:18px 0 0; color:var(--muted); font-size:13px; text-align:right; }
+    h2 { margin:48px 0 10px; padding-bottom:12px; border-bottom:3px solid var(--blue); font-size:25px; }
+    .comments-note { margin:0 0 8px; color:var(--muted); font-size:14px; }
+    .comment { padding:26px 4px; border-bottom:1px solid var(--line); }
+    .comment-author { display:flex; align-items:center; justify-content:space-between; gap:16px; color:var(--blue); font-size:16px; font-weight:700; }
+    .country { color:var(--muted); font-size:13px; font-weight:400; white-space:nowrap; }
+    .comment p { margin:12px 0 0; font:17px/1.95 "Noto Serif SC",STSong,SimSun,serif; text-align:justify; }
+    .ps { color:#9d1628; }
+    .announcement { margin:50px 0 0; padding:28px 30px; border:1px solid #ddd5bd; border-top:5px solid #d49a22; background:#fffaf0; }
+    .announcement h2 { margin:0 0 20px; padding:0; border:0; color:#7c5411; }
+    .announcement .quote { margin:0 0 22px; color:#555; font:17px/1.9 "Noto Serif SC",STSong,SimSun,serif; }
+    .notice { margin:0 0 24px; padding:13px 16px; background:rgba(212,154,34,.12); font-weight:700; text-align:center; }
+    .poem { width:min(460px,100%); margin:auto; color:#333; font:18px/2.05 "Noto Serif SC",STSong,SimSun,serif; }
+    .poem p { margin:0; }
+    .unclear { border-bottom:1px dotted #9d1628; cursor:help; }
+    .source-note { margin:34px 0 0; padding-top:18px; border-top:1px dashed #c8cdd2; color:var(--muted); font-size:13px; line-height:1.8; }
+    footer { padding:28px 20px 36px; border-top:3px solid #102943; color:#b8c0c9; background:#202b37; text-align:center; font-size:13px; line-height:1.8; }
+    @media (max-width:680px) { .masthead-inner{width:calc(100% - 28px);height:74px}.brand strong{font-size:32px}.brand span{font-size:15px;letter-spacing:2px}.slogan{display:none}main{width:100%;margin:12px 0 0;box-shadow:none}article{padding:30px 20px 48px}.lead,.comment p{font-size:16px}.poll-summary{padding:21px 18px}.poll-row{grid-template-columns:44px 1fr 42px;gap:9px}.announcement{padding:24px 20px}.comment-author{align-items:flex-start}.country{white-space:normal;text-align:right} }
+  </style>
+</head>
+<body>
+  <div class="top-line"></div>
+  <header class="masthead"><div class="masthead-inner"><div class="brand"><strong>环球时报</strong><span>环球调研</span></div><div class="slogan">深入全球现场　洞察时代脉动</div></div></header>
+  <main>
+    <article>
+      <span class="section-label">民意调查</span>
+      <h1>关于法兰西地区独立的支持率</h1>
+      <p class="subtitle">全球元首意见调查</p>
+      <div class="meta"><span>记者：VanTigon</span><span>发自：英属印度·阳买市</span><span>环球时报·环球调研</span></div>
+      <p class="lead">目前，法兰西地区领导人昊高乐单方面宣布法兰西的独立，截止发稿前，罗马尼亚总统 Beelzebub·G 未对此事发表任何看法。本报特意为各国元首提供发言平台，就此事展开讨论。</p>
+
+      <section class="poll-summary" aria-labelledby="poll-heading">
+        <h2 id="poll-heading">全球元首投票结果</h2>
+        <p class="poll-summary-note">根据下方 7 位元首已经确定的公开立场统计</p>
+        <div class="poll-row"><span class="poll-label">支持</span><div class="poll-track"><div class="poll-bar" data-choice="support" style="width:85.7%"></div></div><span class="poll-value">6票</span></div>
+        <div class="poll-row"><span class="poll-label">中立</span><div class="poll-track"><div class="poll-bar" data-choice="neutral" style="width:14.3%"></div></div><span class="poll-value">1票</span></div>
+        <div class="poll-row"><span class="poll-label">反对</span><div class="poll-track"><div class="poll-bar" data-choice="oppose" style="width:0"></div></div><span class="poll-value">0票</span></div>
+        <p class="poll-total">共统计 <strong>7</strong> 位元首</p>
+      </section>
+
+      <section aria-labelledby="voices-heading">
+        <h2 id="voices-heading">评论区</h2>
+        <p class="comments-note">以下内容依原稿先后顺序整理。</p>
+
+        <div class="comment"><div class="comment-author"><span>梵蒂冈·圣国玛拉顶达</span><span class="country">支持 🇫🇷</span></div><p>本皇认为，一个独立的法兰西是制衡西欧各国的重要力量；同时，一个独立的法兰西既可为罗马尼亚赢得自由民主的良好声誉，也可暗为罗马尼亚争取更多的话语权。法罗为友而不为敌，建议昊高乐同志以谈判为主要手段，勿更生祸端。</p><p class="ps">P.S. 昊兄，生命比独立更要。</p><p>本国不参与双方争端，但愿提供公正第三方与谈判地点。希望双方以和为贵。我国十字架自上次印度事件后已经涨价了。@印度(英)_大公·谌，这位大公不肯付款。</p></div>
+
+        <div class="comment"><div class="comment-author"><span>恒特勒</span><span class="country">支持 🇫🇷</span></div><p>我全力支持法国的运动，我们急需这位盟友的回归。即使德军主力正在挪威与俄罗斯对峙，但本土国防军依旧可以支援法国自由军，齐格菲防线上的两个军随时准备跨过莱茵河。古德里安的第7装甲军正在从东线赶来。</p></div>
+
+        <div class="comment"><div class="comment-author"><span>墨索鲁尼</span><span class="country">支持 🇫🇷</span></div><p>我以意大利方面态度支持法兰西，并全力支援，但暂保留领事裁决权。一但开战，意方与法方将共组最前战线。</p></div>
+
+        <div class="comment"><div class="comment-author"><span>gay·liking</span><span class="country">中立</span></div><p>解放运动无法改变被**的命运，我认为法国唯一要做的就是努力发展，直到像我国一样强大。</p></div>
+
+        <div class="comment"><div class="comment-author"><span>Jack·Z</span><span class="country">支持 🇫🇷</span></div><p>解放运动是十分必要，一个强大的国家，首先要自主独立，作为法兰西的长期盟友，我方与法兰西一直保持友好关系。同时，望和平解放法兰西。</p><p class="ps">P.S. Jack·Z 于9.16日复出。</p></div>
+
+        <div class="comment"><div class="comment-author"><span>James·H</span><span class="country">支持 🇫🇷</span></div><p>法兰西的运动是人民自愿的、无外部势力干涉的，是自由民主的体现。我方十分赞同挪方的看法，并希望同梵方所说能在罗法双方交涉的前提下和平解决法兰西独立问题。</p></div>
+
+        <div class="comment"><div class="comment-author"><span>FS·D</span><span class="country">支持 🇫🇷</span></div><p>若不独立，何谓之国？爱尔兰政府将全力支持曾经强大西法兰西民族的解放。但个人提议以谈判为主，尽量不动用武力。期待法罗达成共识。</p></div>
+      </section>
+
+      <aside class="announcement" aria-labelledby="announcement-heading">
+        <h2 id="announcement-heading">Beelzebub·G 公告</h2>
+        <p class="quote">“处在历史中的人民总是迷茫的。罗马尼亚政府不愿成为一个强硬、强人所难的政府。但各国的立场让罗方心寒。”</p>
+        <p class="notice">Beelzebub.G 于9.14日退出政坛。 🇷🇴 <span aria-label="纪念">纪念</span></p>
+        <div class="poem" aria-label="公告所附短诗">
+          <p>棋手离开了棋盘</p><p>一些棋子还在一隅偏安</p><p>昨日的天空有些暗淡</p><p>星星抹去了清寒</p><p>愿家能有那片温暖</p><p>正如心里始终不变的期待</p><p>归去能有溪水潺湲</p><p>归去会有山高水远</p><p>归去是心灵的港湾</p><p>温和总怀<br>期许永盼</p><p style="text-align:right">——佚名</p>
+        </div>
+      </aside>
+
+    </article>
+  </main>
+</body>
+</html>
