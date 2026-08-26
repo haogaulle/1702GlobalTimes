@@ -6,23 +6,23 @@
   <meta name="description" content="环球时报·环球调研：关于法兰西地区独立的支持率——全球元首意见调查">
   <title>关于法兰西地区独立的支持率｜环球调研</title>
   <style>
-    :root { --blue:#17365d; --red:#ba0c2f; --ink:#20242a; --muted:#707780; --line:#e1e5e9; --paper:#fff; --page:#f3f5f6; --ice:#f1f6fa; }
+    :root { --teal:#176b68; --deep-teal:#0e4f4c; --accent:#b36a2e; --red:#ba0c2f; --ink:#20242a; --muted:#707780; --line:#e1e5e9; --paper:#fff; --page:#f3f5f6; --ice:#eef7f6; }
     * { box-sizing:border-box; }
     body { margin:0; color:var(--ink); background:var(--page); font-family:"Noto Sans SC","Microsoft YaHei","PingFang SC",sans-serif; -webkit-font-smoothing:antialiased; }
-    .top-line { height:5px; background:linear-gradient(90deg,var(--blue) 0 33%,#fff 33% 66%,var(--red) 66%); }
+    .top-line { height:5px; background:var(--teal); }
     .masthead { background:var(--paper); border-bottom:1px solid var(--line); }
     .masthead-inner { width:min(1120px,calc(100% - 40px)); height:94px; margin:auto; display:flex; align-items:center; justify-content:space-between; gap:24px; }
-    .brand { display:flex; align-items:baseline; gap:14px; color:var(--blue); white-space:nowrap; }
+    .brand { display:flex; align-items:baseline; gap:14px; color:var(--teal); white-space:nowrap; }
     .brand strong { font:42px/1 STKaiti,KaiTi,serif; letter-spacing:-2px; }
     .brand span { padding-left:14px; border-left:1px solid #d9d9d9; color:#555; font-size:18px; letter-spacing:4px; }
     .slogan { color:#999; font:14px/1.6 SimSun,serif; }
     main { width:min(880px,calc(100% - 40px)); margin:26px auto 56px; background:var(--paper); box-shadow:0 1px 5px rgba(0,0,0,.06); }
     article { padding:42px 44px 68px; }
-    .section-label { display:inline-block; margin-bottom:17px; padding:5px 11px; color:#fff; background:var(--red); font-size:14px; letter-spacing:1px; }
+    .section-label { display:inline-block; margin-bottom:17px; padding:5px 11px; color:#fff; background:var(--accent); font-size:14px; letter-spacing:1px; }
     h1 { margin:0; color:#181818; font:700 clamp(31px,4vw,44px)/1.35 "Noto Serif SC",STSong,SimSun,serif; letter-spacing:-1px; }
     .subtitle { margin:12px 0 0; color:#555; font:18px/1.7 "Noto Serif SC",STSong,SimSun,serif; }
     .meta { display:flex; flex-wrap:wrap; gap:8px 18px; margin:22px 0 28px; padding-bottom:23px; border-bottom:1px solid var(--line); color:var(--muted); font-size:14px; }
-    .lead { margin:0 0 36px; padding:22px 25px; border-left:4px solid var(--blue); background:var(--ice); font:17px/1.95 "Noto Serif SC",STSong,SimSun,serif; text-align:justify; }
+    .lead { margin:0 0 36px; padding:22px 25px; border-left:4px solid var(--teal); background:var(--ice); font:17px/1.95 "Noto Serif SC",STSong,SimSun,serif; text-align:justify; }
     .poll-summary { margin:0 0 42px; padding:24px 26px; border:1px solid var(--line); background:#fafbfc; }
     .poll-summary h2 { margin:0 0 6px; padding:0; border:0; font-size:23px; }
     .poll-summary-note { margin:0 0 22px; color:var(--muted); font-size:13px; }
@@ -35,13 +35,13 @@
     .poll-bar[data-choice="oppose"] { background:var(--red); }
     .poll-value { color:var(--muted); font-size:13px; text-align:right; font-variant-numeric:tabular-nums; }
     .poll-total { margin:18px 0 0; color:var(--muted); font-size:13px; text-align:right; }
-    h2 { margin:48px 0 10px; padding-bottom:12px; border-bottom:3px solid var(--blue); font-size:25px; }
+    h2 { margin:48px 0 10px; padding-bottom:12px; border-bottom:3px solid var(--teal); font-size:25px; }
     .comments-note { margin:0 0 8px; color:var(--muted); font-size:14px; }
     .comment { padding:26px 4px; border-bottom:1px solid var(--line); }
-    .comment-author { display:flex; align-items:center; justify-content:space-between; gap:16px; color:var(--blue); font-size:16px; font-weight:700; }
+    .comment-author { display:flex; align-items:center; justify-content:space-between; gap:16px; color:var(--teal); font-size:16px; font-weight:700; }
     .country { color:var(--muted); font-size:13px; font-weight:400; white-space:nowrap; }
     .comment p { margin:12px 0 0; font:17px/1.95 "Noto Serif SC",STSong,SimSun,serif; text-align:justify; }
-    .ps { color:#9d1628; }
+    .ps { color:#995521; }
     .announcement { margin:50px 0 0; padding:28px 30px; border:1px solid #ddd5bd; border-top:5px solid #d49a22; background:#fffaf0; }
     .announcement h2 { margin:0 0 20px; padding:0; border:0; color:#7c5411; }
     .announcement .quote { margin:0 0 22px; color:#555; font:17px/1.9 "Noto Serif SC",STSong,SimSun,serif; }
@@ -50,7 +50,7 @@
     .poem p { margin:0; }
     .unclear { border-bottom:1px dotted #9d1628; cursor:help; }
     .source-note { margin:34px 0 0; padding-top:18px; border-top:1px dashed #c8cdd2; color:var(--muted); font-size:13px; line-height:1.8; }
-    footer { padding:28px 20px 36px; border-top:3px solid #102943; color:#b8c0c9; background:#202b37; text-align:center; font-size:13px; line-height:1.8; }
+    footer { padding:28px 20px 36px; border-top:3px solid var(--deep-teal); color:#b8c0c9; background:#202b37; text-align:center; font-size:13px; line-height:1.8; }
     @media (max-width:680px) { .masthead-inner{width:calc(100% - 28px);height:74px}.brand strong{font-size:32px}.brand span{font-size:15px;letter-spacing:2px}.slogan{display:none}main{width:100%;margin:12px 0 0;box-shadow:none}article{padding:30px 20px 48px}.lead,.comment p{font-size:16px}.poll-summary{padding:21px 18px}.poll-row{grid-template-columns:44px 1fr 42px;gap:9px}.announcement{padding:24px 20px}.comment-author{align-items:flex-start}.country{white-space:normal;text-align:right} }
   </style>
 </head>
