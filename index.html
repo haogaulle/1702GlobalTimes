@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="环球时报电子化文章阅读导航">
-  <title>环球时报电子化｜文章目录</title>
+  <meta name="description" content="环球时报电子化版本导航">
+  <title>环球时报电子化｜版本导航</title>
   <style>
     :root {
       color-scheme: light;
       --ink: #172033;
       --muted: #667085;
       --paper: #f6f4ef;
-      --card: rgba(255, 255, 255, 0.9);
+      --card: rgba(255, 255, 255, 0.92);
       --accent: #a71930;
       --line: rgba(23, 32, 51, 0.12);
     }
@@ -25,7 +25,7 @@
       background:
         radial-gradient(circle at 85% 10%, rgba(167, 25, 48, 0.09), transparent 28rem),
         var(--paper);
-      font-family: "Noto Serif SC", "Songti SC", "STSong", Georgia, serif;
+      font-family: "Noto Serif SC", "Songti SC", STSong, Georgia, serif;
     }
 
     main {
@@ -79,7 +79,7 @@
       letter-spacing: 0.02em;
     }
 
-    .articles {
+    .versions {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 18px;
@@ -87,8 +87,8 @@
 
     article a {
       display: flex;
-      min-height: 190px;
-      padding: 28px;
+      min-height: 220px;
+      padding: 30px;
       flex-direction: column;
       justify-content: space-between;
       color: inherit;
@@ -108,20 +108,26 @@
       outline: none;
     }
 
-    .category {
+    .status {
       color: var(--accent);
       font: 700 13px/1.4 system-ui, sans-serif;
       letter-spacing: 0.08em;
     }
 
     h2 {
-      margin: 24px 0 0;
-      font-size: clamp(22px, 3vw, 29px);
-      line-height: 1.4;
+      margin: 22px 0 8px;
+      font-size: clamp(26px, 4vw, 34px);
+      line-height: 1.35;
     }
 
-    .read {
-      margin-top: 24px;
+    .description {
+      margin: 0;
+      color: var(--muted);
+      font: 15px/1.7 system-ui, sans-serif;
+    }
+
+    .enter {
+      margin-top: 28px;
       color: var(--muted);
       font: 14px/1.4 system-ui, sans-serif;
     }
@@ -135,105 +141,36 @@
     }
 
     @media (max-width: 680px) {
-      main { padding-top: 48px; }
-      .articles { grid-template-columns: 1fr; }
-      article a { min-height: 165px; }
+      main { padding: 48px 0 56px; }
+      .versions { grid-template-columns: 1fr; }
+      article a { min-height: 190px; padding: 24px; }
     }
   </style>
 </head>
 <body>
   <main>
     <header>
-      <p class="eyebrow">Digital Edition</p>
+      <p class="eyebrow">Digital Editions</p>
       <h1>环球时报电子化</h1>
-      <p class="intro">聚合时政锐评与人物报道。选择一篇文章，进入完整阅读页面。</p>
+      <p class="intro">本项目按版本收录《环球时报》电子化文稿。请选择一个版本进入文章目录。</p>
       <p class="project-note">在英明的昊高乐陛下的指示下，法兰西文化局重启了《环球时报》电子化的伟大项目；</p>
       <p class="contributor-note">如果您也想成为贡献者，敬请致函昊高乐陛下</p>
     </header>
 
-    <section class="articles" aria-label="文章列表">
+    <section class="versions" aria-label="版本列表">
       <article>
-        <a href="./%E7%8E%AF%E7%90%83%E6%97%B6%E6%8A%A5%E7%89%B9%E5%88%AB%E4%B8%93%E6%A0%8F.html">
-          <span class="category">特别专栏 · 特别报道</span>
-          <h2>环球时报特别专栏</h2>
-          <span class="read">阅读全文 →</span>
-        </a>
-      </article>
-
-      <article>
-        <a href="./%E5%85%B3%E4%BA%8E%E6%B3%95%E5%85%B0%E8%A5%BF%E5%9C%B0%E5%8C%BA%E7%8B%AC%E7%AB%8B%E7%9A%84%E6%94%AF%E6%8C%81%E7%8E%87.html">
-          <span class="category">环球调研 · 民意调查</span>
-          <h2>关于法兰西地区独立的支持率</h2>
-          <span class="read">阅读全文 →</span>
-        </a>
-      </article>
-
-      <article>
-        <a href="./法兰西独立号外.html">
-          <span class="category">高峰论坛 · 政府博客</span>
-          <h2>号外｜法兰西民族解放运动，我们需要世界人民的帮助！</h2>
-          <span class="read">阅读全文 →</span>
-        </a>
-      </article>
-
-      <article>
-        <a href="./%E6%8C%AA%E5%A8%81%E6%94%BF%E5%BA%9C%E5%85%B3%E4%BA%8E%E6%94%BF%E6%9D%83%E6%89%98%E7%AE%A1%E5%AE%89%E6%8E%92%E7%9A%84%E5%85%AC%E5%87%BD.html">
-          <span class="category">高峰论坛 · 政府博客</span>
-          <h2>挪威政府关于政权托管安排的公函</h2>
-          <span class="read">阅读全文 →</span>
-        </a>
-      </article>
-
-      <article>
-        <a href="./%E5%8F%88%E4%B8%80%E5%9C%BA%E6%85%95%E5%B0%BC%E9%BB%91%3F.html">
-          <span class="category">时政锐评</span>
-          <h2>又一场慕尼黑？</h2>
-          <span class="read">阅读全文 →</span>
-        </a>
-      </article>
-
-      <article>
-        <a href="./%E5%B7%9D%E5%90%89%E5%B0%94%EF%BC%8C%E4%B8%80%E4%BB%A3%E6%94%BF%E5%9D%9B%E7%A1%AC%E6%B1%89.html">
-          <span class="category">人物专访</span>
-          <h2>川吉尔，一代政坛硬汉</h2>
-          <span class="read">阅读全文 →</span>
-        </a>
-      </article>
-
-      <article>
-        <a href="./%E6%81%90%E6%80%96%E4%B8%BB%E4%B9%89%E5%86%8D%E6%8A%AC%E5%A4%B4%EF%BC%8C%E8%8B%B1%E8%81%94%E9%82%A6%E5%A6%82%E4%BD%95%E5%BA%94%E5%AF%B9%EF%BC%9F.html">
-          <span class="category">人物专访</span>
-          <h2>恐怖主义再次抬头，英联邦如何应对？</h2>
-          <span class="read">阅读全文 →</span>
-        </a>
-      </article>
-
-      <article>
-        <a href="./%E8%8B%B1%E5%9B%BD%E5%86%85%E6%94%BF%E5%8D%B1%E6%9C%BA%EF%BC%8C%E5%B7%9D%E5%90%89%E5%B0%94%E8%83%BD%E5%90%A6%E5%8A%9B%E6%8C%BD%E6%BE%9C.html">
-          <span class="category">时事锐评</span>
-          <h2>英国内政危机，川吉尔能否力挽澜？</h2>
-          <span class="read">阅读全文 →</span>
-        </a>
-      </article>
-
-      <article>
-        <a href="./%E6%81%92%E7%89%B9%E5%8B%92%EF%BC%9A%E8%8D%A3%E8%80%80%E7%9A%84%E8%83%8C%E5%90%8E%E5%88%BB%E7%9D%80%E4%B8%80%E9%81%93%E5%AD%A4%E7%8B%AC.html">
-          <span class="category">人物专访</span>
-          <h2>恒特勒：荣耀的背后刻着一道孤独</h2>
-          <span class="read">阅读全文 →</span>
-        </a>
-      </article>
-
-      <article>
-        <a href="./%E9%98%B3%E8%B0%8B%E8%BF%98%E6%98%AF%E9%98%B4%E8%B0%8B%EF%BC%9FBeelzebub%C2%B7G%EF%BC%8C%E4%B8%80%E4%BD%8D%E4%BC%98%E7%A7%80%E7%9A%84%E6%94%BF%E5%9D%9B%E2%80%9C%E6%A3%8B%E6%89%8B%E2%80%9D.html">
-          <span class="category">人物专访</span>
-          <h2>阳谋还是阴谋？Beelzebub·G，一位优秀的政坛“棋手”</h2>
-          <span class="read">阅读全文 →</span>
+        <a href="./%E7%8E%AF%E7%90%83%E6%97%B6%E6%8A%A5%201.0/">
+          <div>
+            <span class="status">已收录 · 第一版</span>
+            <h2>环球时报 1.0</h2>
+            <p class="description">浏览当前已完成电子化的时评、人物、论坛、调研与特别专栏文章。</p>
+          </div>
+          <span class="enter">进入版本 →</span>
         </a>
       </article>
     </section>
 
-    <footer>本页面用于集中浏览仓库内的 HTML 文章。</footer>
+    <footer>后续版本将以独立目录继续收录，并在此统一提供入口。</footer>
   </main>
 </body>
 </html>
