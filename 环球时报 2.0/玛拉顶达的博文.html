@@ -54,8 +54,16 @@
     summary {cursor:pointer;color:var(--navy);font-size:15px;padding:14px 0;}
     .post-meta {flex-wrap:wrap;gap:16px;}
     @media (max-width:680px) { .feed-head {padding:22px 20px 0;} .ad-grid {grid-template-columns:1fr;} .ad {padding:18px;} .ad p {font-size:17px;} .brand {gap:10px;} .brand span {letter-spacing:0;} main {margin-bottom:56px;} }
+
+    .avatar[href] { cursor: zoom-in; }
+    .avatar[href]:focus-visible { outline: 3px solid var(--navy); outline-offset: 3px; }
+    .avatar-preview { box-sizing: border-box; width: min(900px, calc(100% - 32px)); max-width: none; max-height: calc(100dvh - 32px); padding: 48px 12px 12px; border: 0; border-radius: 12px; background: #fff; }
+    .avatar-preview::backdrop { background: rgb(0 0 0 / 75%); }
+    .avatar-preview img { display: block; width: 100%; height: auto; max-height: calc(100dvh - 108px); object-fit: contain; }
+    .avatar-preview-close { position: absolute; top: 8px; right: 12px; min-height: 36px; padding: 6px 12px; border: 1px solid #d9dee3; border-radius: 6px; background: #fff; color: #17365d; font: inherit; cursor: pointer; }
 </style></head><body><div class="top-line"></div><header class="masthead"><div class="masthead-inner"><div class="brand"><strong>环球时报</strong><span>圆桌论坛</span></div><div class="slogan">账号发言，汇成环球动态</div></div></header><main><nav class="edition-nav" aria-label="版本导航"><a href="../index.html">版本首页</a><a href="../环球时报%201.0/index.html">环球时报 1.0</a><a href="./index.html">环球时报 2.0</a></nav><article id="post-003" aria-labelledby="post-title-003">
-<header class="post-head"><div class="avatar"><img src="./static/玛拉顶达.png" alt="玛拉顶达头像：白金礼服与白色教皇小帽的油画肖像" width="52" height="52"></div><div class="account"><div class="account-name">玛拉顶达 <span class="verified" aria-label="已认证：梵蒂冈神国教皇" title="梵蒂冈神国教皇">V</span></div><div class="account-meta">认证信息：梵蒂冈神国教皇</div></div></header>
+<header class="post-head"><a class="avatar" href="./static/玛拉顶达.png" aria-label="查看头像大图"><img src="./static/玛拉顶达.png" alt="玛拉顶达头像：白金礼服与白色教皇小帽的油画肖像" width="52" height="52"></a><div class="account"><div class="account-name">玛拉顶达 <span class="verified" aria-label="已认证：梵蒂冈神国教皇" title="梵蒂冈神国教皇">V</span></div><div class="account-meta">认证信息：梵蒂冈神国教皇</div></div></header>
 <div class="post-body"><h1 class="post-title" id="post-title-003">玛拉顶达的博文</h1><p class="post-text">谢邀@昊高乐</p><p class="post-text">人在教堂，刚下飞机，接到这个广告其实开始我是拒绝的，但是认真一看——嚇！这本《环球时报2.0》竟如此好看！立马就爱不释手了，欢迎大家照顾我私人的企业</p><p class="post-text">@神國全球禮儀GodFatherBlessU！@英属印度大公_Chen 这是我们的VIP星级用户。</p><div class="post-time">原稿日期未注明 · 发布于环球时报 2.0</div></div>
 <div class="post-meta"><span>圆桌论坛</span><a href="./%E7%8E%9B%E6%8B%89%E9%A1%B6%E8%BE%BE%E7%9A%84%E5%8D%9A%E6%96%87.html">第 003 条博文</a></div>
-</article></main></body></html>
+</article></main><script src="./avatar-preview.js" defer></script>
+</body></html>

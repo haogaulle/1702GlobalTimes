@@ -69,6 +69,13 @@
     .page-status { font-size:14px; color:var(--muted); }
     article { overflow-wrap:anywhere; }
     @media (max-width:680px) { .feed-message {padding:20px;} }
+
+    .avatar[href] { cursor: zoom-in; }
+    .avatar[href]:focus-visible { outline: 3px solid var(--navy); outline-offset: 3px; }
+    .avatar-preview { box-sizing: border-box; width: min(900px, calc(100% - 32px)); max-width: none; max-height: calc(100dvh - 32px); padding: 48px 12px 12px; border: 0; border-radius: 12px; background: #fff; }
+    .avatar-preview::backdrop { background: rgb(0 0 0 / 75%); }
+    .avatar-preview img { display: block; width: 100%; height: auto; max-height: calc(100dvh - 108px); object-fit: contain; }
+    .avatar-preview-close { position: absolute; top: 8px; right: 12px; min-height: 36px; padding: 6px 12px; border: 1px solid #d9dee3; border-radius: 6px; background: #fff; color: #17365d; font: inherit; cursor: pointer; }
 </style></head><body><div class="top-line"></div><header class="masthead"><div class="masthead-inner"><div class="brand"><strong>环球时报</strong><span>圆桌论坛</span></div><div class="slogan">账号发言，汇成环球动态</div></div></header><main><nav class="edition-nav" aria-label="版本导航"><a href="../index.html">版本首页</a><a href="../环球时报%201.0/index.html">环球时报 1.0</a><a href="./index.html" aria-current="page">环球时报 2.0</a></nav><div class="feed-head">
   <p id="feed-count">正在读取博文…</p>
 </div>
@@ -81,4 +88,5 @@
 <noscript><p class="feed-message">请启用 JavaScript 查看分页信息流，也可以直接阅读<a href="./广告.html">广告</a>。</p></noscript>
 </main>
 <script src="./feed.js" defer></script>
+<script src="./avatar-preview.js" defer></script>
 </body></html>

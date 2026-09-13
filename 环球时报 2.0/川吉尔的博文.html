@@ -54,8 +54,16 @@
     summary {cursor:pointer;color:var(--navy);font-size:15px;padding:14px 0;}
     .post-meta {flex-wrap:wrap;gap:16px;}
     @media (max-width:680px) { .feed-head {padding:22px 20px 0;} .ad-grid {grid-template-columns:1fr;} .ad {padding:18px;} .ad p {font-size:17px;} .brand {gap:10px;} .brand span {letter-spacing:0;} main {margin-bottom:56px;} }
+
+    .avatar[href] { cursor: zoom-in; }
+    .avatar[href]:focus-visible { outline: 3px solid var(--navy); outline-offset: 3px; }
+    .avatar-preview { box-sizing: border-box; width: min(900px, calc(100% - 32px)); max-width: none; max-height: calc(100dvh - 32px); padding: 48px 12px 12px; border: 0; border-radius: 12px; background: #fff; }
+    .avatar-preview::backdrop { background: rgb(0 0 0 / 75%); }
+    .avatar-preview img { display: block; width: 100%; height: auto; max-height: calc(100dvh - 108px); object-fit: contain; }
+    .avatar-preview-close { position: absolute; top: 8px; right: 12px; min-height: 36px; padding: 6px 12px; border: 1px solid #d9dee3; border-radius: 6px; background: #fff; color: #17365d; font: inherit; cursor: pointer; }
 </style></head><body><div class="top-line"></div><header class="masthead"><div class="masthead-inner"><div class="brand"><strong>环球时报</strong><span>圆桌论坛</span></div><div class="slogan">账号发言，汇成环球动态</div></div></header><main><nav class="edition-nav" aria-label="版本导航"><a href="../index.html">版本首页</a><a href="../环球时报%201.0/index.html">环球时报 1.0</a><a href="./index.html">环球时报 2.0</a></nav><article id="post-005" aria-labelledby="post-title-005">
-<header class="post-head"><div class="avatar"><img src="./static/川吉尔.png" alt="川吉尔头像：深色三件套、圆点领结与英国旗徽章的油画肖像" width="52" height="52"></div><div class="account"><div class="account-name">川吉尔 <span class="verified" aria-label="已认证：英国首相" title="英国首相">V</span></div><div class="account-meta">认证信息：英国首相</div></div></header>
+<header class="post-head"><a class="avatar" href="./static/川吉尔.png" aria-label="查看头像大图"><img src="./static/川吉尔.png" alt="川吉尔头像：深色三件套、圆点领结与英国旗徽章的油画肖像" width="52" height="52"></a><div class="account"><div class="account-name">川吉尔 <span class="verified" aria-label="已认证：英国首相" title="英国首相">V</span></div><div class="account-meta">认证信息：英国首相</div></div></header>
 <div class="post-body"><h1 class="post-title" id="post-title-005">川吉尔的博文</h1><p class="post-text">有志者，事竟成，破釜沉舟，巴基斯坦分南北；苦心人，天不负，卧薪尝胆，墨索隽尼举白旗。</p><p class="post-text">英国一向致力于扩大国际影响力，十分荣幸加入《环球时报》；虽然不是特别理解为什么意大利这样的货色也能加入圆桌会议，甚至还敢妄言“政治中心”，并且胆敢与德英联盟妄言并立？！！墨索隽尼的轻率将给意大利带来毁灭性打击。</p><div class="post-time">原稿日期未注明 · 发布于环球时报 2.0</div></div>
 <div class="post-meta"><span>圆桌论坛</span><a href="./%E5%B7%9D%E5%90%89%E5%B0%94%E7%9A%84%E5%8D%9A%E6%96%87.html">第 005 条博文</a></div>
-</article></main></body></html>
+</article></main><script src="./avatar-preview.js" defer></script>
+</body></html>
