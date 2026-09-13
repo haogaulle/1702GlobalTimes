@@ -124,7 +124,12 @@
       if (!Array.isArray(list) || !list.every(post => typeof post.file === 'string' && typeof post.title === 'string')) {
         throw new Error('博文清单格式错误');
       }
-      posts = list;
+      // Sort before pagination; equal or missing orders retain manifest order.
+      posts = list.sort((a, b) => {
+        const aOrder = Number.isFinite(a.order) ? a.order : Infinity;
+        const bOrder = Number.isFinite(b.order) ? b.order : Infinity;
+        return aOrder === bOrder ? 0 : aOrder - bOrder;
+      });
       await render();
     } catch (error) {
       count.textContent = '博文清单暂时无法加载';
