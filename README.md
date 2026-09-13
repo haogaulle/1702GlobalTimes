@@ -24,11 +24,15 @@ https://<你的 GitHub 用户名>.github.io/<仓库名>/
 
 ## 发布到 GitHub Pages
 
-1. 在 GitHub 新建一个仓库，并把本项目提交、推送到仓库的默认分支（通常为 `main`）。
-2. 打开仓库的 **Settings → Pages**。
-3. 在 **Build and deployment** 中，将 **Source** 设为 **Deploy from a branch**。
-4. 选择 `main` 分支和 `/ (root)` 目录，然后保存。
-5. 等待 GitHub 完成部署；Pages 页面会显示可公开访问的网址。
+1. 打开仓库的 **Settings → Pages**。
+2. 在 **Build and deployment** 中，将 **Source** 设为 **GitHub Actions**。
+3. 将 `.github/workflows/pages.yml` 随项目提交并推送到 `master` 分支，工作流会自动发布。
+4. 在仓库的 **Actions** 中查看 **Deploy static site to GitHub Pages** 的运行结果；也可以选择该工作流，点击 **Run workflow** 并选择 `master` 手动发布。
+5. 等待部署成功；Pages 设置页面和工作流的部署记录会显示访问网址。
+
+工作流直接发布仓库根目录的静态文件，无需安装依赖或运行构建。以后每次推送到 `master` 都会自动更新网站，无需额外配置密钥。
+
+仓库保留了 `CNAME` 文件中的自定义域名 `1702gts.top`。使用 GitHub Actions 发布时，还需确保 **Settings → Pages → Custom domain** 中仍设置了该域名，不能仅依赖 `CNAME` 文件。
 
 ## 内容说明
 
